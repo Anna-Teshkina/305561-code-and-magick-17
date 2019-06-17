@@ -65,15 +65,11 @@ var printString = function (ctx, txt) {
 };
 
 var getMaxElement = function (array) {
-  if (array !== '') {
-    var maxElement = array[0];
-    for (var i = 1; i < array.length; i++) {
-      if (array[i] > maxElement) {
-        maxElement = array[i];
-      }
+  var maxElement = array[0];
+  for (var i = 1; i < array.length; i++) {
+    if (array[i] > maxElement) {
+      maxElement = array[i];
     }
-    return maxElement;
-  } else {
-    return 0;
   }
+  return maxElement;
 };
